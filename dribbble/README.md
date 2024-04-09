@@ -1,7 +1,11 @@
 # To Run This Project 
+
 enter the command "npm start" in terminal
+
 or 
+
 use this live-site url : https://dribbble-assignment.netlify.app
+
 or
 
 
