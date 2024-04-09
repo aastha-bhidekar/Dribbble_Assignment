@@ -1,0 +1,13 @@
+
+/* Illustration.css */
+.illustration {
+  width: 100%;
+  max-width: 1000px;
+  /* Adjust this value as needed */
+}
+
+.illustration img {
+  width: 100%;
+  height: auto;
+}
+

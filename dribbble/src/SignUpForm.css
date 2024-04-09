@@ -1,0 +1,78 @@
+/* SignUpForm.css */
+
+/* Common styles */
+.signup-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.app-container {
+  flex: 1;
+  padding: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px; /* Adjust this value as needed */
+  margin: 0 auto;
+}
+
+/* Top right section */
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.top-right .already-member,
+.top-right .sign-in {
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.top-right .sign-in {
+  color: #db2c61;
+}
+
+.top-right .sign-in:hover {
+  text-decoration: underline;
+}
+
+/* Terms checkbox */
+.terms-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.terms-checkbox input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Button */
+.app-container form button {
+  background-color: #db2c61;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.app-container form button:hover {
+  background-color: #e490a9;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

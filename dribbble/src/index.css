@@ -1,0 +1,46 @@
+/* InputField.css */
+
+.input-field {
+  margin-bottom: 1rem;
+}
+
+.input-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.input-field input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.input-field input:focus {
+  outline: none;
+  border-color: #007bff; /* Change the border color when the input is focused */
+}
+
+.input-field .error {
+  color: red; /* Set error message color to red */
+  font-size: 0.8rem; /* Adjust font size of error message */
+  margin-top: 0.2rem; /* Add a slight margin on top of the error message */
+}
+
+.input-field .hint {
+  font-size: 0.8rem; /* Adjust font size of hint message */
+  color: #666; /* Set hint message color */
+}
+
+
+@media (max-width: 600px) {
+  .input-field input,
+  .button {
+    width: 100%; /* Set full width for input fields and buttons on small screens */
+  }
+}
+
+
+

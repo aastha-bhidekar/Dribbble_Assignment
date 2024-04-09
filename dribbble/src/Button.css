@@ -1,0 +1,15 @@
+/* Button.css */
+
+.button {
+  background-color: #db2c61;; /* Set button background color to blue */
+  color: white; /* Set button text color to white */
+  padding: 0.6rem 1rem; /* Add padding to the button */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Add border radius */
+  font-size: 1rem; /* Set button font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.button:hover {
+  background-color: #db2c61;; /* Change button background color on hover */
+}
