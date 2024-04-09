@@ -1,8 +1,8 @@
+// EmailVerificationPage.js
 import React from 'react';
 import './EmailVerificationPage.css';
 
-
-const EmailVerificationPage = ({location}) => {
+const EmailVerificationPage = ({ location }) => {
   const user = JSON.parse(localStorage.getItem('user'));
   const locationData = localStorage.getItem('location');
   const profileImageData = localStorage.getItem('profileImage');
@@ -17,37 +17,29 @@ const EmailVerificationPage = ({location}) => {
     // Implement the logic to change the email address
     console.log('Changing email address...');
   };
+
   return (
     <div className="email-verification">
-            <header className="header">
+      <header className="header">
         <nav className="navbar">
           <div className="navbar-brand">
             <a href="#">Dribbble</a>
           </div>
-          <ul className="navbar-nav">
-            <li className="nav-item">
+          <div className="dropdown">
+            <a className="nav-item menu" href="#">Menu &#9776;</a>
+            <div className="dropdown-menu">
               <a href="#">Inspiration</a>
-            </li>
-            <li className="nav-item">
               <a href="#">Find Work</a>
-            </li>
-            <li className="nav-item">
               <a href="#">Learn Design</a>
-            </li>
-            <li className="nav-item">
               <a href="#">Go Pro</a>
-            </li>
-            <li className="nav-item">
               <a href="#">Hire Designers</a>
-            </li>
-            </ul>
-            <ul className="navbar-nav2">
+            </div>
+          </div>
+          <ul className="navbar-nav2">
             <li className="nav-item search-bar">
               <input type="text" placeholder="Search" />
             </li>
-            <li className="nav-item">
-              <a href="#">&#128269;</a>
-            </li>
+            
             <li className="nav-item-profile">
               <a href="#">{profileImageData && <img src={profileImageData} alt="Profile" />}</a>
             </li>
@@ -59,7 +51,7 @@ const EmailVerificationPage = ({location}) => {
         <h2>Please verify your email...</h2>
         <div className="envelope-icon">✉️</div>
         <p>Please verify your email address. We've sent a confirmation email to:</p>
-        <p className="email-address">a{user.email}</p>
+        <p className="email-address">{user.email}</p>
         <p>Click the confirmation link in that email to begin using Dribbble.</p>
         <p>
           Didn't receive the email? Check your Spam folder, it may have been caught by a filter. If
